@@ -1,0 +1,62 @@
+{
+  "1": {
+    "script": "R U2 R' U' R U R' U' R U' R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/1.png"
+  },
+  "2": {
+    "script": "R U2 R2 U' R2 U' R2 U2 R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/2.png"
+  },
+  "3": {
+    "script": "x' R U' R' D R U R' D'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/3.png"
+  },
+  "4": {
+    "script": "R2 D' R U2 R' D R U2 R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/4.png"
+  },
+  "5": {
+    "script": "x' R U R' D R U' R' D'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/5.png"
+  },
+  "6": {
+    "script": "L' U' L U' L' U2 L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/6.png"
+  },
+  "7": {
+    "script": "R U R' U R U2 R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/7.png"
+  },
+  "8": {
+    "script": "R U2 R2 F R F' U2 R' F R F'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/8.png"
+  },
+  "9": {
+    "script": "L F' L' F U2 F U' R U' R' F'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/9.png"
+  },
+  "10": {
+    "script": "R U2 R2 F R F' U2 M' U R U' L'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/10.png"
+  },
+  "11": {
+    "script": "F R U R' U' F' f R U R' U' f'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/11.png"
+  },
+  "12": {
+    "script": "R' U2 F R U R' U' F2 U2 F R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/12.png"
+  },
+  "13": {
+    "script": "M U R' F2 R U L' U L2 l'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/13.png"
+  },
+  "14": {
+    "script": "M U' L F2 L' U' R U' R2 r",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/14.png"
+  },
+  "15": {
+    "script": "M U R U R' U' M2 U R U' r'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/15.png"
+  }
+}

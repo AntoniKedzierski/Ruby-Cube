@@ -69,7 +69,7 @@ export default class Arrow extends React.Component {
 
   rotationArrow() {
     return (
-      <span className="rotation-circle">
+      <span className="rotation-circle" style={{boxShadow: this.props.rotateBoth ? "0px -5px 1px #264653aa" : "none"}}>
         <span className="rotation-mask" style={{backgroundColor: this.props.bg}}/>
         {this.props.direction === "counter-clockwise" ?
           <ArrowHead top="36" left="7" rotation="145" /> :

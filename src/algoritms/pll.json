@@ -12,7 +12,7 @@
     "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/pll/e.png"
   },
   "F": {
-    "script": "L U F L' U' L U L F' L2 U L U L' U' L U' L'",
+    "script": "y2 R' U' F' R U R' U' R' F R2' U' R' U' R U R' U R",
     "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/pll/f.png"
   },
   "G": {
@@ -44,11 +44,11 @@
     "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/pll/j'.png"
   },
   "N": {
-    "script": "R' U L' U2 R U' L R' U L' U2 R U' L U",
+    "script": "R' U L' U2 R U' L R' U L' U2 R U' L U'",
     "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/pll/n.png"
   },
   "N'": {
-    "script": "L U' R U2' L' U R' L U' R U2' L' U R' U'",
+    "script": "L U' R U2' L' U R' L U' R U2' L' U R' U",
     "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/pll/n'.png"
   },
   "R": {

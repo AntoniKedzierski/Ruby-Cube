@@ -78,6 +78,24 @@ const moveDecoder = (move) => {
     case "E2'":
       return <Arrow type="horizontal" position="mid" direction="left" double="true"/>
 
+    case 'f':
+      return <Arrow type="rotation" direction="clockwise" rotateBoth={true}/>
+    case "f'":
+      return <Arrow type="rotation" direction="counter-clockwise" rotateBoth={true}/>
+    case "f2":
+      return <Arrow type="rotation" direction="clockwise" double="true" rotateBoth={true}/>
+    case "f2'":
+      return <Arrow type="rotation" direction="counter-clockwise" double="true" rotateBoth={true}/>       
+
+    case 'b':
+      return <Arrow type="rotation" direction="counter-clockwise" rotateBoth={true}/>
+    case "b'":
+      return <Arrow type="rotation" direction="clockwise" rotateBoth={true}/>
+    case 'b2':
+      return <Arrow type="rotation" direction="counter-clockwise" double="true" rotateBoth={true}/>
+    case "b2'":
+      return <Arrow type="rotation" direction="clockwise" double="true" rotateBoth={true}/>
+
     case 'r':
       return (
         <span>
@@ -209,6 +227,21 @@ const moveDecoder = (move) => {
     case "z'":
       return <Arrow type="rotation" position="mid" direction="counter-clockwise" bg="#e9c46a"/>
 
+    case "x2":
+      return <Arrow type="vertical" position="mid" direction="up" double="true"/>
+    case "x2'":
+      return <Arrow type="vertical" position="mid" direction="down" double="true"/>
+
+    case "y2":
+      return <Arrow type="horizontal" position="mid" direction="left" double="true"/>
+    case "y2'":
+      return <Arrow type="horizontal" position="mid" direction="right" double="true"/>
+
+    case "z2":
+      return <Arrow type="rotation" position="mid" direction="clockwise" double="true" bg="#e9c46a"/>
+    case "z2'":
+      return <Arrow type="rotation" position="mid" direction="counter-clockwise" double="true" bg="#e9c46a"/>
+
     default:
       return <span>Unknown move...</span>
   }
@@ -226,7 +259,10 @@ export default class Move extends React.Component {
   isWholeCubeMove() {
     if (this.props.label === "x" || this.props.label === "x'" ||
         this.props.label === "y" || this.props.label === "y'" ||
-        this.props.label === "z" || this.props.label === "z'")
+        this.props.label === "z" || this.props.label === "z'" ||
+        this.props.label === "x2" || this.props.label === "x2'" ||
+        this.props.label === "y2" || this.props.label === "y2'" ||
+        this.props.label === "z2" || this.props.label === "z2'")
       return "whole-cube";
     return "";
   }
