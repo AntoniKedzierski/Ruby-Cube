@@ -2,6 +2,8 @@ import React from 'react';
 import Move from './Move';
 import PLL from './algoritms/pll.json';
 import OLL from './algoritms/oll.json';
+import F2L from './algoritms/f2l.json';
+import AlgorithmCard from './AlgorithmCard';
 
 const MirrorMap = (move) => {
   switch (move) {
@@ -38,34 +40,50 @@ const ReverseMap = (move) => {
 class AlgorithmViewer extends React.Component {
   state = {
     algorithm: "",
-    db: "",
     imgSource: "",
-    openModal: false,
+    selectionTab: false,
   }
 
-  loadFromDB = e => {
-    const [ dbName, algorithmName ] = e.target.value.split("_")
-    console.log(dbName, algorithmName)
-    var algorithm = "";
-    var image_url = "";
-
-    if (dbName === "PLL") {
-      algorithm = PLL[algorithmName].script
-      image_url = PLL[algorithmName].image
-    }
-
-    if (dbName === "OLL") {
-      algorithm = OLL[algorithmName].script
-      image_url = OLL[algorithmName].image
-    }
-
-    this.setState({
-      db: e.target.value,
-      algorithm: algorithm,
-      imgSource: image_url,
-    })
+  getPLL = () => {
+    return Object.keys(PLL).map(k => {
+      return <AlgorithmCard 
+        label={PLL[k].label} 
+        image={PLL[k].image} 
+        onClick={() => this.setState({
+          selectionTab: false,
+          imgSource: PLL[k].image,
+          algorithm: PLL[k].script,
+        })}/> 
+      });
   }
 
+  getOLL = (type) => {
+    return Object.keys(OLL).map(k => {
+      if (OLL[k].type !== type) return null;
+      return <AlgorithmCard 
+        label={OLL[k].label} 
+        image={OLL[k].image} 
+        onClick={() => this.setState({
+          selectionTab: false,
+          imgSource: OLL[k].image,
+          algorithm: OLL[k].script,
+        })}/> 
+      });
+  }
+
+  getF2L = (type) => {
+    return Object.keys(F2L).map(k => {
+      if (F2L[k].type !== type) return null;
+      return <AlgorithmCard 
+        label={F2L[k].label} 
+        image={F2L[k].image} 
+        onClick={() => this.setState({
+          selectionTab: false,
+          imgSource: F2L[k].image,
+          algorithm: F2L[k].script,
+        })}/> 
+      });
+  }
 
   render() {
     return ( 
@@ -83,53 +101,13 @@ class AlgorithmViewer extends React.Component {
             onChange={e => this.setState({algorithm: e.target.value})} 
             placeholder="Podaj algorytm" 
           />
-          <select 
-            name="algorithm-db" 
-            id="algorithm-db" 
-            value={this.state.db} onChange={this.loadFromDB}>
-            <optgroup label="=== PLL ===">
-              <option value="PLL_A">A</option>
-              <option value="PLL_A'">A'</option>
-              <option value="PLL_E">E</option>
-              <option value="PLL_F">F</option>
-              <option value="PLL_G">G</option>
-              <option value="PLL_G'">G'</option>
-              <option value="PLL_G2">G2</option>
-              <option value="PLL_G2'">G2'</option>
-              <option value="PLL_H">H</option>
-              <option value="PLL_J">J</option>
-              <option value="PLL_J'">J'</option>
-              <option value="PLL_N">N</option>
-              <option value="PLL_N'">N'</option>
-              <option value="PLL_R">R</option>
-              <option value="PLL_R'">R'</option>
-              <option value="PLL_T">T</option>
-              <option value="PLL_U">U</option>
-              <option value="PLL_U'">U'</option>
-              <option value="PLL_V">V</option>
-              <option value="PLL_Y">Y</option>
-              <option value="PLL_Z">Z</option>
-            </optgroup>
-            <optgroup label="=== OLL: Krzyż ===">
-              <option value="OLL_1">Samochód</option>
-              <option value="OLL_2">Ludzik</option>
-              <option value="OLL_3">Przekątna</option>
-              <option value="OLL_4">Żaba</option>
-              <option value="OLL_5">Kieszenie</option>
-              <option value="OLL_6">Lewoskręt</option>
-              <option value="OLL_7">Prawoskręt</option>
-            </optgroup>
-            <optgroup label="=== OLL: Kropa ===">
-              <option value="OLL_8">Po trzy z boku</option>
-              <option value="OLL_9">Diagonala</option>
-              <option value="OLL_10">Potrójna Miki</option>
-              <option value="OLL_11">Przy po lewej</option>
-              <option value="OLL_12">Pojedyńcza Miki</option>
-              <option value="OLL_13">Lewa dwójka</option>
-              <option value="OLL_14">Prawa dwójka</option>
-              <option value="OLL_15">Szachownica</option>
-            </optgroup>
-          </select>
+          
+          <span 
+            className="button" 
+            onClick={() => this.setState(
+              {selectionTab: true})}>
+            Wybierz...
+          </span>
           <span 
             className="button" 
             onClick={() => this.setState(
@@ -142,6 +120,28 @@ class AlgorithmViewer extends React.Component {
               {algorithm: this.state.algorithm.split(" ").slice(0).reverse().map(m => ReverseMap(m)).join(" ")})}>
             Od tyłu
           </span>
+        </div>
+        <div class={this.state.selectionTab ? "algorithm-selector" : "algorithm-selector hidden"} >
+          <h2>1. PLL</h2>
+          <div className="section">{this.getPLL()}</div>
+          <h2>2. OLL</h2>
+          <h4>2.1 Krzyż</h4>
+          <div className="section">{this.getOLL("cross")}</div>
+          <h4>2.2 Kropka</h4>
+          <div className="section">{this.getOLL("dot")}</div>
+          <h2>3. F2L</h2>
+          <h4>3.1 Poprawnie zoorientowany róg na swoim miejscu</h4>
+          <div className="section">{this.getF2L("corner-placed-correctly")}</div>
+          <h4>3.2 Róg na swoim miejscu, kolorem białym w lewo</h4>
+          <div className="section">{this.getF2L("corner-white-left")}</div>
+          <h4>3.3 Róg na swoim miejscu, kolorem białym w prawo</h4>
+          <div className="section">{this.getF2L("corner-white-right")}</div>
+          <h4>3.4 Biały róg skierowany ku górze</h4>
+          <div className="section">{this.getF2L("corner-white-up")}</div>
+          <h4>3.5 Biały róg skierowany w prawo</h4>
+          <div className="section">{this.getF2L("corner-top-right")}</div>
+          <h4>3.6 Biały róg skierowany w lewo</h4>
+          <div className="section">{this.getF2L("corner-top-left")}</div>
         </div>
         <div class="move-container">
           {this.state.algorithm ? this.state.algorithm.split(" ").map(m => <Move label={m}/>) : null}

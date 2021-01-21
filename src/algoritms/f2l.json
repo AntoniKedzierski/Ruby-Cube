@@ -1,0 +1,249 @@
+{
+  "1": {
+    "type": "corner-placed-correctly",
+    "label": "Obrót źle zorientowanej krawędzi",
+    "script": "R' F R F' R U' R' U R U' R' U2 R U' R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/1.png"
+  },
+  "2": {
+    "type": "corner-placed-correctly",
+    "label": "Wpasowanie z prawej strony",
+    "script": "y U' L' U L U y' R U' R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/2.png"
+  },
+  "3": {
+    "type": "corner-placed-correctly",
+    "label": "Wpasowanie z lewej strony",
+    "script": "U R U' R' U' y L' U L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/3.png"
+  },
+  "4": {
+    "type": "corner-white-left",
+    "label": "Wpasowanie i obrót z lewej",
+    "script": "y L' U' L U L' U' L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/4.png"
+  },
+  "5": {
+    "type": "corner-white-left",
+    "label": "Wpasowanie i obrót z prawej",
+    "script": "R U' R' U R U' R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/5.png"
+  },
+  "6": {
+    "type": "corner-white-left",
+    "label": "Obrót przy poprawnej krawędzi",
+    "script": "y L' U' L U2 L' U L U' L' U' L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/6.png"
+  },
+  "7": {
+    "type": "corner-white-left",
+    "label": "Obrót z krawędzią",
+    "script": "y L' U' L U L' U L U2 y' R U R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/7.png"
+  },
+  "8": {
+    "type": "corner-white-right",
+    "label": "Wpasowanie i obrót z prawej",
+    "script": "R U R' U' R U R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/8.png"
+  },
+  "9": {
+    "type": "corner-white-right",
+    "label": "Wpasowanie i obrót z lewej",
+    "script": "y L' U L U' L' U L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/9.png"
+  },
+  "10": {
+    "type": "corner-white-right",
+    "label": "Obrót przy poprawnej krawędzi",
+    "script": "R U R' U2 R U' R' U R U R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/10.png"
+  },
+  "11": {
+    "type": "corner-white-right",
+    "label": "Obrót z krawędzią",
+    "script": "R U R' U' R U' R' U2 y L' U' L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/11.png"
+  },
+  "12": {
+    "type": "corner-white-up",
+    "label": "Krawędź dobrze dopasowana",
+    "script": "R U R' U' R U R' U' R U R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/12.png"
+  },
+  "13": {
+    "type": "corner-white-up",
+    "label": "Elementy dobrze dopasowane",
+    "script": "R U' R' U y L' U L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/13.png"
+  },
+  "14": {
+    "type": "corner-white-up",
+    "label": "Pasująca krawędź z prawej strony",
+    "script": "R U2 R' U' R U R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/14.png"
+  },
+  "15": {
+    "type": "corner-white-up",
+    "label": "Niepasująca krawędź z prawej strony",
+    "script": "y L' U' L U2 L' U' L U L' U' L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/15.png"
+  },
+  "16": {
+    "type": "corner-white-up",
+    "label": "Pasująca krawędź z lewej strony",
+    "script": "y L' U2 L U L' U' L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/16.png"
+  },
+  "17": {
+    "type": "corner-white-up",
+    "label": "Niepasująca krawędź z lewej strony",
+    "script": "R U R' U2 R U R' U' R U R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/17.png"
+  },
+  "18": {
+    "type": "corner-white-up",
+    "label": "Krawędź z tyłu po lewej niewymagająca rotacji",
+    "script": "R U' R' U2 R U R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/18.png"
+  },
+  "19": {
+    "type": "corner-white-up",
+    "label": "Krawędź z tyłu po lewej wymagająca rotacji",
+    "script": "y U' L' U2 L U' L' U L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/19.png"
+  },
+  "20": {
+    "type": "corner-white-up",
+    "label": "Krawędź z tyłu po prawej niewymagająca rotacji",
+    "script": "y L' U L U2 L' U' L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/20.png"
+  },
+  "21": {
+    "type": "corner-white-up",
+    "label": "Krawędź z tyłu po prawej wymagająca rotacji",
+    "script": "U R U2 R' U R U' R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/21.png"
+  },
+  
+  "22": {
+    "type": "corner-top-right",
+    "label": "Krawędź poprawnie ustawiona",
+    "script": "y U L' U L U2 L' U L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/22.png"
+  },
+  "23": {
+    "type": "corner-top-right",
+    "label": "Krawędź do obrócenia",
+    "script": "y U L' U' L U' y' R U R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/23.png"
+  },
+  "24": {
+    "type": "corner-top-right",
+    "label": "Krawędź dopasowana po prawej",
+    "script": "U' R U' R' U R U R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/24.png"
+  },
+  "25": {
+    "type": "corner-top-right",
+    "label": "Krawędź niedopasowana po prawej",
+    "script": "R U' R' U2 y L' U' L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/25.png"
+  },
+  "26": {
+    "type": "corner-top-right",
+    "label": "Krawędź dopasowana po lewej",
+    "script": "y U' L' U L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/26.png"
+  },
+  "27": {
+    "type": "corner-top-right",
+    "label": "Krawędź niedopasowana po lewej",
+    "script": "R U' R' U R U' R' U2 R U' R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/27.png"
+  },
+  "28": {
+    "type": "corner-top-right",
+    "label": "Krawędź z tyłu po prawej niewymagająca rotacji",
+    "script": "R U R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/28.png"
+  },
+  "29": {
+    "type": "corner-top-right",
+    "label": "Krawędź z tyłu po prawej wymagająca rotacji",
+    "script": "y U L' U2 L U2 L' U L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/29.png"
+  },
+  "30": {
+    "type": "corner-top-right",
+    "label": "Krawędź z tyłu po lewej tym samym kolorem ku górze",
+    "script": "y U L' U' L U2 L' U L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/30.png"
+  },
+  "31": {
+    "type": "corner-top-right",
+    "label": "Krawędź z tyłu po lewej innym kolorem ku górze",
+    "script": "U' R U R' U R U R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/31.png"
+  },
+  "32": {
+    "type": "corner-top-left",
+    "label": "Krawędź poprawnie ustawiona",
+    "script": "U' R U' R' U2 R U' R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/32.png"
+  },
+  "33": {
+    "type": "corner-top-left",
+    "label": "Krawędź do obrócenia",
+    "script": "U' R U R' U y L' U' L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/33.png"
+  },
+  "34": {
+    "type": "corner-top-left",
+    "label": "Elementy przygotowane do włożenia",
+    "script": "U R U' R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/34.png"
+  },
+  "35": {
+    "type": "corner-top-left",
+    "label": "Niepasująca krawędź z prawej strony",
+    "script": "y L' U L U' L' U L U2 L' U L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/35.png"
+  },
+  "36": {
+    "type": "corner-top-left",
+    "label": "Pasująca krawędź z lewej strony",
+    "script": "y U L' U L U' L' U' L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/36.png"
+  },
+  "37": {
+    "type": "corner-top-left",
+    "label": "Niepasująca krawędź z lewej strony",
+    "script": "y L' U L U2 y' R U R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/37.png"
+  },
+  "38": {
+    "type": "corner-top-left",
+    "label": "Krawędź z tyłu po prawej tym samym kolorem ku górze",
+    "script": "U' R U R' U2 R U' R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/38.png"
+  },
+  "39": {
+    "type": "corner-top-left",
+    "label": "Krawędź z tyłu po lewej innym kolorem ku górze",
+    "script": "y U L' U' L U' L' U' L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/39.png"
+  },
+  "40": {
+    "type": "corner-top-left",
+    "label": "Krawędź z tyłu po lewej wymagająca rotacji",
+    "script": "U' R U2 R' U2 R U' R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/40.png"
+  },
+  "41": {
+    "type": "corner-top-left",
+    "label": "Krawędź z tyłu po lewej niewymagająca rotacji",
+    "script": "y L' U' L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/f2l/41.png"
+  }
+}
