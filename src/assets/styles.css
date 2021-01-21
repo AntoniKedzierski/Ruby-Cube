@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #f3edde;
+  height: 100vh;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  min-width: 100px;
+  text-align: center;
+
+  border-radius: 10px;
+  background-color: #264653;
+  color: #f8f2f1;
+
+  user-select: none;
+  cursor: pointer;
+
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+  background-color: #f3f3f3;
+  color: #264653;
+  box-shadow: 0px 3px 6px #00000045;
+}
+
+
+.algorithm-viewer {
+  display: flex;
+  flex-direction: column;
+
+  width: 1000px;
+  padding: 20px 40px;
+  flex: 0 0 340px;
+
+  border-radius: 20px;
+  box-shadow: 3px 12px 15px #00000035;
+  background-color: #fefefe;
+}
+
+.algorithm-viewer .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.algorithm-viewer h1 {
+  padding: 0;
+  color: #264653;
+}
+
+.algorithm-viewer input {
+  width: 600px;
+  padding: 10px;
+  margin-right: 15px;
+
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px #00000045;
+}
+
+.algorithm-viewer select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #264653;
+}
+
+.algorithm-viewer img {
+  width: auto;
+  height: 80px;
+}
+
+.algorithm-viewer .move-container {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}

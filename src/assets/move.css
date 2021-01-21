@@ -1,0 +1,20 @@
+.move-frame {
+  position: relative;
+
+  width: 71px;
+  height: 71px;
+  
+  border: 1px solid #264653;
+  background-color: rgb(250, 250, 250);
+  border-radius: 3px;
+
+  margin: 5px;
+}
+
+.backside {
+  border: 1px dashed #264653;
+}
+
+.whole-cube {
+  background-color: #e9c46a;
+}
