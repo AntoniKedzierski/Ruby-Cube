@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+:root {
+  --ruby: #1F051F;
+  --crimson: #77304C;
+  --gold: #ffbb00;
+  --dark-gold: #c59100;
+  --pink: #BB7D84;
+  --gray: #887C8B;
+  --white: #f1e9e9;  
+}

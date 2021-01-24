@@ -1,0 +1,49 @@
+ <svg height="170" width="180">
+
+  <defs>
+    <filter id="red-glow" filterUnits="userSpaceOnUse"
+            x="-50%" y="-50%" width="200%" height="200%">
+       <!-- blur the text at different levels-->
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur5"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur10"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur20"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="30" result="blur30"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="50" result="blur50"/>
+      <!-- merge all the blurs except for the first one -->
+      <feMerge result="blur-merged">
+        <feMergeNode in="blur10"/>
+        <feMergeNode in="blur20"/>
+        <feMergeNode in="blur30"/>
+        <feMergeNode in="blur50"/>
+      </feMerge>
+      <!-- recolour the merged blurs red-->
+      <feColorMatrix result="red-blur" in="blur-merged" type="matrix"
+                     values="1 0 0 0 0
+                             0 1 0 0 0
+                             0 0 1 0 0
+                             0 0 0 1 0" />
+      <feMerge>
+        <feMergeNode in="red-blur"/>       <!-- largest blurs coloured red -->
+        <feMergeNode in="blur5"/>          <!-- smallest blur left white -->
+        <feMergeNode in="SourceGraphic"/>  <!-- original white text -->
+      </feMerge>
+    </filter>
+  </defs>
+
+  <path d="M5 40 L30 10 L90 3 L150 10 L175 40 
+           L120 45 L150 10 L90 17 L120 45 L60 45
+           L90 17 L30 10 L60 45 L5 40 L90 165 
+           L60 45 M90 165 L120 45 M90 165 L175 40" 
+    stroke="white" 
+    stroke-width="1" 
+    fill="none"/>
+  <circle cx="6" cy='40' r="2" fill="white"/>
+  <circle cx="30" cy='10' r="2" fill="white"/>
+  <circle cx="90" cy='3' r="2" fill="white"/>
+  <circle cx="150" cy='10' r="2" fill="white"/>
+  <circle cx="174" cy='40' r="2" fill="white"/>
+  <circle cx="90" cy='17' r="2" fill="white"/>
+  <circle cx="60" cy='45' r="2" fill="white"/>
+  <circle cx="120" cy='45' r="2" fill="white"/>
+  <circle cx="90" cy='164' r="2" fill="white"/>
+</svg> 

@@ -42,6 +42,8 @@ class AlgorithmViewer extends React.Component {
     algorithm: "",
     imgSource: "",
     selectionTab: false,
+    mirror: false,
+    reverse: false
   }
 
   getPLL = () => {
@@ -49,11 +51,14 @@ class AlgorithmViewer extends React.Component {
       return <AlgorithmCard 
         label={PLL[k].label} 
         image={PLL[k].image} 
-        onClick={() => this.setState({
-          selectionTab: false,
-          imgSource: PLL[k].image,
-          algorithm: PLL[k].script,
-        })}/> 
+        onClick={() => {
+          this.setState({
+            selectionTab: false,
+            imgSource: PLL[k].image,
+            algorithm: PLL[k].script,
+          });
+          this.props.toggleBlur();
+        }}/> 
       });
   }
 
@@ -63,11 +68,14 @@ class AlgorithmViewer extends React.Component {
       return <AlgorithmCard 
         label={OLL[k].label} 
         image={OLL[k].image} 
-        onClick={() => this.setState({
-          selectionTab: false,
-          imgSource: OLL[k].image,
-          algorithm: OLL[k].script,
-        })}/> 
+        onClick={() => {
+          this.setState({
+            selectionTab: false,
+            imgSource: OLL[k].image,
+            algorithm: OLL[k].script,
+          });
+          this.props.toggleBlur();
+        }}/> 
       });
   }
 
@@ -77,25 +85,28 @@ class AlgorithmViewer extends React.Component {
       return <AlgorithmCard 
         label={F2L[k].label} 
         image={F2L[k].image} 
-        onClick={() => this.setState({
-          selectionTab: false,
-          imgSource: F2L[k].image,
-          algorithm: F2L[k].script,
-        })}/> 
+        onClick={() => {
+          this.setState({
+            selectionTab: false,
+            imgSource: F2L[k].image,
+            algorithm: F2L[k].script,
+          });
+          this.props.toggleBlur();
+        }}/> 
       });
   }
 
   render() {
     return ( 
-      <div class="algorithm-viewer">
-        <div class="header">
+      <div className="algorithm-viewer">
+        <div className={`header ${this.props.blurred ? "blurred" : ""}`}>
           <h1>Podgląd algorytmu</h1>
           <img src={this.state.imgSource} alt="visualization"/>
         </div>
         <p>
           Wpisz algorytm używając standardowej notacji i oddzielając ruchy spacją. Możesz też wybrać algorytm z listy.
         </p>
-        <div class="task-bar">
+        <div className="task-bar">
           <input 
             value={this.state.algorithm} 
             onChange={e => this.setState({algorithm: e.target.value})} 
@@ -104,25 +115,43 @@ class AlgorithmViewer extends React.Component {
           
           <span 
             className="button" 
-            onClick={() => this.setState(
-              {selectionTab: true})}>
+            onClick={() => {
+              this.setState({selectionTab: true});
+              this.props.toggleBlur();
+            }}>
             Wybierz...
           </span>
           <span 
-            className="button" 
+            className={`button ${this.state.mirror ? "active" : ""}`} 
             onClick={() => this.setState(
-              {algorithm: this.state.algorithm.split(" ").map(m => MirrorMap(m)).join(" ")})}>
+              {
+                algorithm: this.state.algorithm.split(" ").map(m => MirrorMap(m)).join(" "),
+                mirror: !this.state.mirror  
+              })}>
             Mirror
           </span>
           <span
-            className="button" 
+            className={`button ${this.state.reverse ? "active" : ""}`} 
             onClick={() => this.setState(
-              {algorithm: this.state.algorithm.split(" ").slice(0).reverse().map(m => ReverseMap(m)).join(" ")})}>
+              {
+                algorithm: this.state.algorithm.split(" ").slice(0).reverse().map(m => ReverseMap(m)).join(" "),
+                reverse: ~this.state.reverse  
+              })}>
             Od tyłu
           </span>
         </div>
         <div class={this.state.selectionTab ? "algorithm-selector" : "algorithm-selector hidden"} >
-          <h2>1. PLL</h2>
+          <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+            <h2>1. PLL</h2>
+            <span 
+              className="button" 
+              onClick={() => {
+                this.setState({selectionTab: false});
+                this.props.toggleBlur();
+              }}>
+              Zamknij
+            </span>
+          </div>
           <div className="section">{this.getPLL()}</div>
           <h2>2. OLL</h2>
           <h4>2.1 Krzyż</h4>

@@ -1,0 +1,48 @@
+.app-header {
+  background-color: transparent;
+  text-align: center;
+  color: var(--white);
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-header h1 {
+  font-family: 'Montserrat';
+  font-size: 80px;
+  margin: 0;
+  position: relative;
+  padding: 100px;
+  background-image: radial-gradient(var(--ruby), transparent 50%);
+  z-index: 1;
+}
+
+.app-header .ruby {
+  left: calc(50% - 93px);
+  top: 60px;
+  position: absolute;
+  transform: scale(1.25);
+  filter: url(#red-glow);
+}
+
+.app-header .navbar {
+  font-family: 'Montserrat';
+  font-size: 17px;
+  width: 500px;
+
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.app-header .navbar .navitem {
+  user-select: none;
+  cursor: pointer;
+  padding-bottom: 1px;
+}
+
+
+
+
