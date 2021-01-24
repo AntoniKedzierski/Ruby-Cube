@@ -1,3 +1,1 @@
-The application is hosted on [ruby-cube.vercel.app/](ruby-cube.vercel.app/).
-
-Enjoy!
+The application is hosted on [ruby-cube.vercel.app](https://ruby-cube.vercel.app/)
