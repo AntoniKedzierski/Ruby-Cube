@@ -19,8 +19,8 @@ export default class App extends React.Component {
 
   componentDidMount() {
     window.addEventListener("resize", this.updateDimmensions);
-    ReactGA.initialize('G-K4PMPCBV9X');
-    ReactGA.pageview('/');
+    window.gtag('event', 'login', {method: 'Google'});
+    console.log("Google Analytics Mounted...")
   }
 
   componentWillUnmount() {
