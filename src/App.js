@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactGA from 'react-ga';
 
 import AlgorithmViewer from './AlgorithmViewer';
 import "./assets/styles.css";
