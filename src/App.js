@@ -1,6 +1,7 @@
 import React from 'react';
-import AlgorithmViewer from './AlgorithmViewer';
+import ReactGA from 'react-ga';
 
+import AlgorithmViewer from './AlgorithmViewer';
 import "./assets/styles.css";
 import Header from './Header';
 
@@ -9,14 +10,29 @@ export default class App extends React.Component {
   state = {
     algorithm: "",
     blurred: false,
+    mobile: false,
+  }
+
+  updateDimmensions = () => {
+    this.setState({mobile: window.innerWidth <= 1000})
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateDimmensions);
+    ReactGA.initialize('G-K4PMPCBV9X');
+    ReactGA.pageview('/');
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimmensions);
   }
 
   render() {
     return (
       <div className={`background`}>
-        <Header blurred={this.state.blurred}/>
+        <Header mobile={this.state.mobile}/>
         <div className="container">
-          <AlgorithmViewer blurred={this.state.blurred} toggleBlur={() => this.setState({blurred: !this.state.blurred})}/>
+          <AlgorithmViewer mobile={this.state.mobile}/>
         </div>
       </div>
     )

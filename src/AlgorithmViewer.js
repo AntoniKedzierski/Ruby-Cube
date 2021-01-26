@@ -104,7 +104,8 @@ class AlgorithmViewer extends React.Component {
           <img src={this.state.imgSource} alt="visualization"/>
         </div>
         <p>
-          Wpisz algorytm używając standardowej notacji i oddzielając ruchy spacją. Możesz też wybrać algorytm z listy.
+          Wpisz algorytm używając standardowej notacji i oddzielając ruchy spacją. Możesz też wybrać go z listy, <br />
+          która zawiera wszystkie algorytmy metody Fridrich.
         </p>
         <div className="task-bar">
           <input 
