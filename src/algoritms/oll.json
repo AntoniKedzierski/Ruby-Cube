@@ -88,5 +88,257 @@
     "label": "Szachownica",
     "script": "M U R U R' U' M2 U R U' r'",
     "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/15.png"
+  },
+  "16": {
+    "type": "P",
+    "label": "Prawa mieszana",
+    "script": "R' U' F U R U' R' F' R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/16.png"
+  },
+  "17": {
+    "type": "P",
+    "label": "Lewa mieszana",
+    "script": "L U F' U' L' U L F L'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/17.png"
+  },
+  "18": {
+    "type": "P",
+    "label": "Lewa z trójką",
+    "script": "F U R U' R' F'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/18.png"
+  },
+  "19": {
+    "type": "P",
+    "label": "Prawa z trójką",
+    "script": "F' U' L' U L F",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/19.png"
+  },
+  "20": {
+    "type": "W",
+    "label": "Dwa z lewej",
+    "script": "L' U' L U' L' U L U L F' L' F",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/20.png"
+  },
+  "21": {
+    "type": "W",
+    "label": "Dwa z prawej",
+    "script": "R U R' U R U' R' U' R' F R F'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/21.png"
+  },
+  "22": {
+    "type": "small_L",
+    "label": "Trzy z prawej, dwa odseparowane",
+    "script": "R' F' L F' L' F L F' L' F2 R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/22.png"
+  },
+  "23": {
+    "type": "small_L",
+    "label": "Trzy z lewej, dwa odseparowane",
+    "script": "L F R' F R F' R' F R F2 L'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/23.png"
+  },
+  "24": {
+    "type": "small_L",
+    "label": "Policjant na lewym boku",
+    "script": "F' L' U' L U L' U' L U F",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/24.png"
+  },
+  "25": {
+    "type": "small_L",
+    "label": "Policjant na prawym boku",
+    "script": "F R U R' U' R U R' U' F'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/25.png"
+  },
+  "26": {
+    "type": "small_L",
+    "label": "Trzy z lewej, dwa połączone",
+    "script": "r' U r2 U' r2 U' r2 U r'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/26.png"
+  },
+  "27": {
+    "type": "small_L",
+    "label": "Trzy z prawej, dwa połączone",
+    "script": "l U' l2 U l2 U l2 U' l",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/27.png"
+  },
+  "28": {
+    "type": "small_L",
+    "label": "Strzałka, dwa z prawej u góry",
+    "script": "L' U' L y' L F' L' U L F L'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/28.png"
+  },
+  "29": {
+    "type": "small_L",
+    "label": "Strzałka, dwa z lewej u góry",
+    "script": "R U R' y R' F R U' R' F' R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/29.png"
+  },
+  "30": {
+    "type": "C",
+    "label": "Rozproszony",
+    "script": "R' U' R U F x' R U' R' U D'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/30.png"
+  },
+  "31": {
+    "type": "C",
+    "label": "Jednolity",
+    "script": "R' U' R' F R F' U R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/31.png"
+  },
+  "32": {
+    "type": "T",
+    "label": "Jednolity",
+    "script": "R U R' U' R' F R F'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/32.png"
+  },
+  "33": {
+    "type": "T",
+    "label": "Rozproszony",
+    "script": "F R U R' U' F'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/33.png"
+  },
+  "34": {
+    "type": "I",
+    "label": "Dwie trójki",
+    "script": "R U2 R2 U' R U' R' U2 F R F'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/34.png"
+  },
+  "35": {
+    "type": "I",
+    "label": "Torba na zakupy",
+    "script": "F U R U' R' U R U' R' F'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/35.png"
+  },
+  "36": {
+    "type": "I",
+    "label": "Żółw",
+    "script": "L' B' L U' R' U R U' R' U R L' B L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/36.png"
+  },
+  "37": {
+    "type": "I",
+    "label": "Sumo",
+    "script": "R' U' R U' R' U y' R' U R B",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/37.png"
+  },
+  "38": {
+    "type": "square",
+    "label": "Kwadrat po lewej",
+    "script": "R' F2 L F L' F R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/38.png"
+  },
+  "39": {
+    "type": "square",
+    "label": "Kwadrat po prawej",
+    "script": "L F2 R' F' R F' L'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/39.png"
+  },
+  "40": {
+    "type": "square",
+    "label": "Bukiet po prawej",
+    "script": "x' R' F2 R2 U' R' U R' F2 R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/40.png"
+  },
+  "41": {
+    "type": "square",
+    "label": "Bukiet po lewej",
+    "script": "F R' F' R U R U' R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/41.png"
+  },
+  "42": {
+    "type": "S",
+    "label": "S po lewej, dwie dwójki",
+    "script": "L F R' F R F2 L'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/42.png"
+  },
+  "43": {
+    "type": "S",
+    "label": "S po prawej, dwie dwójki",
+    "script": "R' F' L F' L' F2 R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/43.png"
+  },
+  "44": {
+    "type": "S",
+    "label": "S na górze, jedna dwójka",
+    "script": "R' L2 F L' F L F2 L' F L' R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/44.png"
+  },
+  "45": {
+    "type": "S",
+    "label": "S lustrzane na górze, jedna dwójka",
+    "script": "L R2 F' R F' R' F2 R F' L' R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/45.png"
+  },
+  "46": {
+    "type": "S",
+    "label": "Kropka i dwójka po lewej",
+    "script": "F' L F' L2 U L U L' U' L F2",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/46.png"
+  },
+  "47": {
+    "type": "S",
+    "label": "Kropka i dwójka po prawej",
+    "script": "F R' F R2 U' R' U' R U R' F2",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/47.png"
+  },
+  "48": {
+    "type": "S",
+    "label": "Kropka na dole po prawej, brak dwójki",
+    "script": "R' F R F' R' F R F' R U R' U' R U R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/48.png"
+  },
+  "49": {
+    "type": "S",
+    "label": "Kropka na dole po lewej, brak dwójki",
+    "script": "L F' L' F L F' L' F L' U' L U L' U' L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/49.png"
+  },
+  "50": {
+    "type": "bolt",
+    "label": "Dwójka po lewej",
+    "script": "L F' L' U' L U F U' L'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/50.png"
+  },
+  "51": {
+    "type": "bolt",
+    "label": "Dwójka po prawej",
+    "script": "R' F R U R' U' F' U R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/51.png"
+  },
+  "52": {
+    "type": "big_L",
+    "label": "Dwie dwójki, nóżka po lewej",
+    "script": "L F' L' U' L F L' y' R' U R",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/52.png"
+  },
+  "53": {
+    "type": "big_L",
+    "label": "Dwie dwójki, nóżka po prawej",
+    "script": "R' F R U R' F' R y L U' L'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/53.png"
+  },
+  "54": {
+    "type": "big_L",
+    "label": "Jedna dwójka, nóżka po prawej",
+    "script": "L' B' L R' U' R U L' B L",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/54.png"
+  },
+  "55": {
+    "type": "big_L",
+    "label": "Jedna dwójka, nóżka po lewej",
+    "script": "R B R' L U L' U' R B' R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/55.png"
+  },
+  "56": {
+    "type": "other",
+    "label": "Orientacja F",
+    "script": "R L' B L R' U2 R L' B L R'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/56.png"
+  },
+  "57": {
+    "type": "other",
+    "label": "Orientacja H",
+    "script": "R U R' U' r R' U R U' r'",
+    "image": "https://www.speedcubing.pl/images/kursy/333/fridrich/sajgon/oll/57.png"
   }
 }

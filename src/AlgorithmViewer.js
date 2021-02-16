@@ -57,7 +57,6 @@ class AlgorithmViewer extends React.Component {
             imgSource: PLL[k].image,
             algorithm: PLL[k].script,
           });
-          this.props.toggleBlur();
         }}/> 
       });
   }
@@ -74,7 +73,6 @@ class AlgorithmViewer extends React.Component {
             imgSource: OLL[k].image,
             algorithm: OLL[k].script,
           });
-          this.props.toggleBlur();
         }}/> 
       });
   }
@@ -91,7 +89,6 @@ class AlgorithmViewer extends React.Component {
             imgSource: F2L[k].image,
             algorithm: F2L[k].script,
           });
-          this.props.toggleBlur();
         }}/> 
       });
   }
@@ -118,7 +115,6 @@ class AlgorithmViewer extends React.Component {
             className="button" 
             onClick={() => {
               this.setState({selectionTab: true});
-              this.props.toggleBlur();
             }}>
             Wybierz...
           </span>
@@ -148,7 +144,6 @@ class AlgorithmViewer extends React.Component {
               className="button" 
               onClick={() => {
                 this.setState({selectionTab: false});
-                this.props.toggleBlur();
               }}>
               Zamknij
             </span>
@@ -159,6 +154,26 @@ class AlgorithmViewer extends React.Component {
           <div className="section">{this.getOLL("cross")}</div>
           <h4>2.2 Kropka</h4>
           <div className="section">{this.getOLL("dot")}</div>
+          <h4>2.3 Litera 'P'</h4>
+          <div className="section">{this.getOLL("P")}</div>
+          <h4>2.4 Litera 'małe L'</h4>
+          <div className="section">{this.getOLL("small_L")}</div>
+          <h4>2.5 Litera C'</h4>
+          <div className="section">{this.getOLL("C")}</div>
+          <h4>2.6 Litera 'T'</h4>
+          <div className="section">{this.getOLL("T")}</div>
+          <h4>2.7 Litera 'I'</h4>
+          <div className="section">{this.getOLL("I")}</div>
+          <h4>2.8 Kwadrat</h4>
+          <div className="section">{this.getOLL("square")}</div>
+          <h4>2.9 Litera 'S'</h4>
+          <div className="section">{this.getOLL("S")}</div>
+          <h4>2.10 Piorun</h4>
+          <div className="section">{this.getOLL("bolt")}</div>
+          <h4>2.11 Litera 'duże L'</h4>
+          <div className="section">{this.getOLL("big_L")}</div>
+          <h4>2.12 Inne</h4>
+          <div className="section">{this.getOLL("other")}</div>
           <h2>3. F2L</h2>
           <h4>3.1 Poprawnie zoorientowany róg na swoim miejscu</h4>
           <div className="section">{this.getF2L("corner-placed-correctly")}</div>

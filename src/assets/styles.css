@@ -5,7 +5,7 @@
     var(--ruby) 70%
   );
   
-  height: 100vh;
+  min-height: 1080px;
 }
 
 .container {
